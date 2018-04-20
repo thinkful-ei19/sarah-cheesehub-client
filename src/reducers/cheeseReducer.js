@@ -22,7 +22,8 @@ const cheeseReducer = (state =  initialState, action) => {
   if (action.type === FETCH_CHEESE_SUCCESS) {
     return Object.assign({}, state, {
       cheeses: action.cheeses,
-      loading: false
+      loading: false,
+      error:null
     });
   }
   if (action.type === FETCH_CHEESE_ERROR) {
