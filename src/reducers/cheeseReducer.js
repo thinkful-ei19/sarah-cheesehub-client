@@ -12,7 +12,6 @@ const initialState = {
 
 const cheeseReducer = (state =  initialState, action) => {
 
-  console.log(action);
   if (action.type === FETCH_CHEESE_REQUEST) {
     return Object.assign({}, state, {
       loading: true,
