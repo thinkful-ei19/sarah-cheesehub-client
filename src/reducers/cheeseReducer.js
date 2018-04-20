@@ -5,6 +5,9 @@ const initialState = {
 }
 
 const cheeseReducer = (state =  initialState, action) => {
+
+  console.log(action);
+
   return state
 }
 

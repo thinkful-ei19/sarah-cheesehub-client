@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
+import { fetchCheeses } from './actions/cheeseAct';
 
 class App extends Component {
+
+  componentDidMount() {
+    this.props.dispatch(fetchCheeses())
+  }
+
   render() {
     console.log(this.props);
     return (
