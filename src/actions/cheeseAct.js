@@ -29,5 +29,5 @@ export const fetchCheeses = cheeses => dispatch => {
       })
       .then(cheeses => dispatch(fetchCheeseSuccess(cheeses)))
       .then(cheeses => console.log(cheeses))
-      .catch(err => dispatch(fetchCheeseError("err")));
+      .catch(err => dispatch(fetchCheeseError(err)));
   }
