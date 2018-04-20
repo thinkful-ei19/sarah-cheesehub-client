@@ -22,6 +22,7 @@ export const fetchCheeses = cheeses => dispatch => {
   dispatch(fetchCheeseRequest()); //tells us we've begun loading
   return fetch(`${API_BASE_URL}/api/cheeses`)
       .then(res => {
+          console.log(res);
         if(!res.ok) {
           return Promise.reject('something went wrong');
         }
