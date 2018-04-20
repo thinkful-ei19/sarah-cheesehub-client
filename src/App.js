@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import { fetchCheeses } from './actions/cheeseAct';
+import CheeseList from './components/cheese-list';
 
 class App extends Component {
 
@@ -14,11 +15,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">All the Cheese!!!</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="cheeseList">
+          <p className="App-intro">
+          Do you even cheese, bro?
+          </p>
+          <CheeseList />
+        </div>
       </div>
     );
   }

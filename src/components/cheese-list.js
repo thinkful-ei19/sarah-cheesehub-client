@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { fetchCheeses } from '../actions/cheeseAct';
+import './cheese-list.css';
 //import {some action} from '../actions/action'
 
 class CheeseList extends React.Component {
